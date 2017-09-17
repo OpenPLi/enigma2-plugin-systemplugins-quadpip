@@ -724,7 +724,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.oldService = self.session.nav.getCurrentlyPlayingServiceReference()
 		self.session.nav.stopService()
 
-		if SystemInfo.get("MiniTV", False):
+		if SystemInfo.get("LcdLiveTV", False):
 			self.disableMiniTV()
 
 		ret = setDecoderMode("mosaic")
@@ -743,7 +743,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.disableQuadPip()
 		setDecoderMode("normal")
 
-		if SystemInfo.get("MiniTV", False):
+		if SystemInfo.get("LcdLiveTV", False):
 			self.enableMiniTV()
 
 		self.qpipChannelList.saveAll()
