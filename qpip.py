@@ -970,7 +970,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.oldLcdLiveTVEnable = open(ENABLE_LCDTV_PROCPATH, "r").read().strip()
 
 	def enableMiniTV(self):
-		open(ENABLE_LCDTV_PROCPATH, "w").write(oldLcdLiveTVEnable)
+		open(ENABLE_LCDTV_PROCPATH, "w").write(self.oldLcdLiveTVEnable)
 
 class QuadPiP(Screen):
 	def __init__(self, session, decoderIdx = 1, pos = None):
