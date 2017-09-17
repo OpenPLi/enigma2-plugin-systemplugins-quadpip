@@ -680,7 +680,6 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		global quad_pip_channel_list_instance
 		self.qpipChannelList = quad_pip_channel_list_instance
 
-		self.oldFccEnable = False
 		self.oldLcdLiveTVEnable = False
 
 		self.onLayoutFinish.append(self.layoutFinishedCB)
@@ -966,25 +965,6 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 	def updateChannelName(self, channel):
 		for idx in range(1,5):
 			self["ch%d" % idx].setText((channel and channel.getChannelName(str(idx))) or "No channel")
-
-	def disableFCC(self):
-		try:
-			self.oldFccEnable = config.plugins.fccsetup.activate.value
-			if self.oldFccEnable:
-				config.plugins.fccsetup.activate.value = False
-				from Plugins.SystemPlugins.FastChannelChange.plugin import FCCChanged
-				FCCChanged()
-		except:
-			self.oldFccEnable = False
-
-	def enableFCC(self):
-		if self.oldFccEnable:
-			try:
-				config.plugins.fccsetup.activate.value = self.oldFccEnable
-				from Plugins.SystemPlugins.FastChannelChange.plugin import FCCChanged
-				FCCChanged()
-			except:
-				pass
 
 	def disableMiniTV(self):
 		self.oldLcdLiveTVEnable = open(ENABLE_LCDTV_PROCPATH, "r").read().strip()
