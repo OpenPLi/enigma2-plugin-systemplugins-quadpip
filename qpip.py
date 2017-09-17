@@ -38,6 +38,7 @@ config.plugins.quadpip = ConfigSubsection()
 config.plugins.quadpip.lastchannel = ConfigNumber(default = 1)
 
 ENABLE_QPIP_PROCPATH = "/proc/stb/video/decodermode"
+ENABLE_LCDTV_PROCPATH = "/proc/stb/lcd/live_enable"
 
 def setDecoderMode(value):
 	if os.access(ENABLE_QPIP_PROCPATH, os.F_OK):
@@ -986,19 +987,10 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 				pass
 
 	def disableMiniTV(self):
-		try:
-			self.oldLcdLiveTVEnable = config.plugins.minitv.enable.value
-			if self.oldLcdLiveTVEnable:
-				config.plugins.minitv.enable.value = False
-		except:
-			self.oldFccEnable = False
+		self.oldLcdLiveTVEnable = open(ENABLE_LCDTV_PROCPATH, "r").read().strip()
 
 	def enableMiniTV(self):
-		if self.oldLcdLiveTVEnable:
-			try:
-				config.plugins.minitv.enable.value = self.oldLcdLiveTVEnable
-			except:
-				pass
+		open(ENABLE_LCDTV_PROCPATH, "w").write(oldLcdLiveTVEnable)
 
 class QuadPiP(Screen):
 	def __init__(self, session, decoderIdx = 1, pos = None):
