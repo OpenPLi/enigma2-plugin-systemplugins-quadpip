@@ -680,7 +680,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.qpipChannelList = quad_pip_channel_list_instance
 
 		self.oldFccEnable = False
-		self.oldMinitvEanble = False
+		self.oldLcdLiveTVEnable = False
 
 		self.onLayoutFinish.append(self.layoutFinishedCB)
 
@@ -987,16 +987,16 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 
 	def disableMiniTV(self):
 		try:
-			self.oldMinitvEanble = config.plugins.minitv.enable.value
-			if self.oldMinitvEanble:
+			self.oldLcdLiveTVEnable = config.plugins.minitv.enable.value
+			if self.oldLcdLiveTVEnable:
 				config.plugins.minitv.enable.value = False
 		except:
 			self.oldFccEnable = False
 
 	def enableMiniTV(self):
-		if self.oldMinitvEanble:
+		if self.oldLcdLiveTVEnable:
 			try:
-				config.plugins.minitv.enable.value = self.oldMinitvEanble
+				config.plugins.minitv.enable.value = self.oldLcdLiveTVEnable
 			except:
 				pass
 
