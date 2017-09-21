@@ -38,7 +38,6 @@ config.plugins.quadpip = ConfigSubsection()
 config.plugins.quadpip.lastchannel = ConfigNumber(default = 1)
 
 ENABLE_QPIP_PROCPATH = "/proc/stb/video/decodermode"
-ENABLE_LCDTV_PROCPATH = "/proc/stb/lcd/live_enable"
 
 def setDecoderMode(value):
 	if os.access(ENABLE_QPIP_PROCPATH, os.F_OK):
@@ -724,8 +723,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.oldService = self.session.nav.getCurrentlyPlayingServiceReference()
 		self.session.nav.stopService()
 
-		if SystemInfo.get("LcdLiveTV", False):
-			self.disableMiniTV()
+		self.disableLcdLiveTV()
 
 		ret = setDecoderMode("mosaic")
 		if ret is not True:
@@ -743,8 +741,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.disableQuadPip()
 		setDecoderMode("normal")
 
-		if SystemInfo.get("LcdLiveTV", False):
-			self.enableMiniTV()
+		self.restoreLcdLiveTV()
 
 		self.qpipChannelList.saveAll()
 		self.session.nav.playService(self.oldService)
@@ -966,11 +963,14 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		for idx in range(1,5):
 			self["ch%d" % idx].setText((channel and channel.getChannelName(str(idx))) or "No channel")
 
-	def disableMiniTV(self):
-		self.oldLcdLiveTVEnable = open(ENABLE_LCDTV_PROCPATH, "r").read().strip()
+	def disableLcdLiveTV(self):
+		if SystemInfo.get("LcdLiveTV", False):
+			self.oldLcdLiveTVEnable = config.lcd.showTv.value
+			config.lcd.showTv.value = False
 
-	def enableMiniTV(self):
-		open(ENABLE_LCDTV_PROCPATH, "w").write(self.oldLcdLiveTVEnable)
+	def restoreLcdLiveTV(self):
+		if SystemInfo.get("LcdLiveTV", False):
+			config.lcd.showTv.value = self.oldLcdLiveTVEnable
 
 class QuadPiP(Screen):
 	def __init__(self, session, decoderIdx = 1, pos = None):
