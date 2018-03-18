@@ -245,6 +245,9 @@ class CreateQuadPipChannelEntry(ChannelSelectionBase):
 
 		self.onLayoutFinish.append(self.layoutFinished)
 
+	def getMutableList(self, root=None):
+		return None
+
 	def layoutFinished(self):
 		self.setTvMode()
 		self.showFavourites()
