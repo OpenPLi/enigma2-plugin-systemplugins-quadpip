@@ -16,7 +16,7 @@ msgstr ""
 msgid "  Menu key : Select quad channel"
 msgstr "[menu]: Выбор блока Quad"
 
-msgid "  Red key : Show/Hide channel name"
+msgid "  Red key : Show/Hide texts"
 msgstr "[red]: Скрыть/показать текст"
 
 msgid " (current channel)"

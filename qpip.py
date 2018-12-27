@@ -415,23 +415,23 @@ class QuadPiPChannelSelection(Screen, HelpableScreen):
 		list_y = 40+button_margin*3
 		self.fontSize = {1080:(28, 24), 720:(24,20), 576:(20,18)}.get(dh, (28, 24))
 		self.skin = QuadPiPChannelSelection.skin % (pw, ph, \
-														sw, sh+list_y, \
-														sw/8-70, button_margin, \
-														sw/8-70+sw/4, button_margin, \
-														sw/8-70+sw/4*2, button_margin, \
-														sw/8-70+sw/4*3, button_margin, \
-														sw/8-70, button_margin, \
-														sw/8-70+sw/4, button_margin, \
-														sw/8-70+sw/4*2, button_margin, \
-														sw/8-70+sw/4*3, button_margin, \
-														0, list_y, sw, sh, \
-														sw/16, 1, sw-sw/16*2, sh/13, \
-														sw/11, 1+sh/13, 			sw-sw/16*2-sw/8, sh/18, \
-														sw/11, 1+sh/13+sh/18, 	sw-sw/16*2-sw/8, sh/18, \
-														sw/11, 1+sh/13+sh/18*2, 	sw-sw/16*2-sw/8, sh/18, \
-														sw/11, 1+sh/13+sh/18*3, 	sw-sw/16*2-sw/8, sh/18, \
-														self.fontSize[0], self.fontSize[1], \
-														sh/3)
+								sw, sh+list_y, \
+								sw/8-70, button_margin, \
+								sw/8-70+sw/4, button_margin, \
+								sw/8-70+sw/4*2, button_margin, \
+								sw/8-70+sw/4*3, button_margin, \
+								sw/8-70, button_margin, \
+								sw/8-70+sw/4, button_margin, \
+								sw/8-70+sw/4*2, button_margin, \
+								sw/8-70+sw/4*3, button_margin, \
+								0, list_y, sw, sh, \
+								sw/16, 1, sw-sw/16*2, sh/13, \
+								sw/11, 1+sh/13, sw-sw/16*2-sw/8, sh/18, \
+								sw/11, 1+sh/13+sh/18, sw-sw/16*2-sw/8, sh/18, \
+								sw/11, 1+sh/13+sh/18*2, sw-sw/16*2-sw/8, sh/18, \
+								sw/11, 1+sh/13+sh/18*3, sw-sw/16*2-sw/8, sh/18, \
+								self.fontSize[0], self.fontSize[1], \
+								sh/3)
 		self["key_red"] = Label(_("Select"))
 		self["key_green"] = Label(_("Add"))
 		self["key_yellow"] = Label(_("Remove"))
@@ -603,7 +603,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 			<widget name="ch4" position="1200,780" zPosition="1" size="480,60" font="Regular; %d" halign="center" valign="center" foregroundColor="white" backgroundColor="#ffffffff" alphatest="on" borderWidth="2"/>
 			<widget name="text1" position="%d,%d" zPosition="2" size="%d,%d" font="Regular; %d" halign="left" valign="center" foregroundColor="white" backgroundColor="#ffffffff" alphatest="on" borderWidth="2"/>
 			<widget name="text2" position="%d,%d" zPosition="2" size="%d,%d" font="Regular; %d" halign="left" valign="center" foregroundColor="white" backgroundColor="#ffffffff" alphatest="on" borderWidth="2"/>
-			<widget name="focus" position="0,0" zPosition="-1" size="960,540" backgroundColor="#ffffffff" borderWidth="5" borderColor="#e61616" alphatest="on" />
+			<widget name="focus" position="0,0" zPosition="3" size="960,540" backgroundColor="#ffffffff" borderWidth="5" borderColor="#e61616" transparent="1" alphatest="on" />
 		</screen>
 		"""
 	def __init__(self, session):
@@ -635,7 +635,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self["ch2"] = Label(" ")
 		self["ch3"] = Label(" ")
 		self["ch4"] = Label(" ")
-		self["text1"] = Label(_("  Red key : Show/Hide channel name"))
+		self["text1"] = Label(_("  Red key : Show/Hide texts"))
 		self["text2"] = Label(_("  Menu key : Select quad channel"))
 		self["focus"] = Slider(-1, -1)
 
@@ -643,9 +643,9 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.updatePositionList()
 
 		self.skin = QuadPipScreen.skin % (self.session.desktop.size().width(), self.session.desktop.size().height(), \
-												self.fontSize, self.fontSize, self.fontSize, self.fontSize, \
-												self.text1Pos[0], self.text1Pos[1], self.text1Pos[2], self.text1Pos[3], self.fontSize, \
-												self.text2Pos[0], self.text2Pos[1], self.text2Pos[2], self.text2Pos[3], self.fontSize)
+							self.fontSize, self.fontSize, self.fontSize, self.fontSize, \
+							self.text1Pos[0], self.text1Pos[1]-5, self.text1Pos[2], self.text1Pos[3], self.fontSize, \
+							self.text2Pos[0], self.text2Pos[1]-5, self.text2Pos[2], self.text2Pos[3], self.fontSize)
 		self.oldService = None
 		self.curChannel = None
 		self.curPlayAudio = -1

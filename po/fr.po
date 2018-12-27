@@ -16,7 +16,7 @@ msgid "  Menu key : Select quad channel"
 msgstr "  Touche Menu : Sélectionner le canal quadruple"
 
 #: ../qpip.py:638
-msgid "  Red key : Show/Hide channel name"
+msgid "  Red key : Show/Hide texts"
 msgstr "  Touche rouge : Afficher/Masquer le nom du canal"
 
 #: ../qpip.py:537
