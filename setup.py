@@ -7,7 +7,7 @@ setup (name = 'enigma2-plugin-systemplugins-quadpip',
 	description = 'QuadPiP plugin for VU+ UHD receivers',
 	packages = [pkg],
 	package_dir = {pkg: 'plugin'},
-	package_data = {pkg: ['locale/*/LC_MESSAGES/*.mo']},
+	package_data = {pkg: ['*.xml', 'locale/*/LC_MESSAGES/*.mo']},
 	cmdclass = setup_translate.cmdclass, # for translation
 	)
 
