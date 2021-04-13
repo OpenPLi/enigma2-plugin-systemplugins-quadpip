@@ -21,7 +21,7 @@ import pickle
 import os
 
 config.plugins.quadpip = ConfigSubsection()
-config.plugins.quadpip.lastchannel = ConfigNumber(default = 1)
+config.plugins.quadpip.lastchannel = ConfigNumber(default=1)
 
 ENABLE_QPIP_PROCPATH = "/proc/stb/video/decodermode"
 
@@ -258,7 +258,7 @@ class CreateQuadPipChannelEntry(ChannelSelectionBase):
 		self["textChannels"].setText("%s :" % self.newChannel.getName())
 
 	def editEntryName(self):
-		self.session.openWithCallback(self.editEntryNameCB, VirtualKeyBoard, title = (_("Input channel name.")), text = self.newChannel.getName())
+		self.session.openWithCallback(self.editEntryNameCB, VirtualKeyBoard, title=(_("Input channel name.")), text=self.newChannel.getName())
 
 	def editEntryNameCB(self, newName):
 		if newName:
