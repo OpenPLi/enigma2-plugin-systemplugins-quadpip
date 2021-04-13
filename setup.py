@@ -10,4 +10,3 @@ setup(name='enigma2-plugin-systemplugins-quadpip',
 	package_data={pkg: ['*.xml', 'locale/*/LC_MESSAGES/*.mo']},
 	cmdclass=setup_translate.cmdclass, # for translation
 	)
-
