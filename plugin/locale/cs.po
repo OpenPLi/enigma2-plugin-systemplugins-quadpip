@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi Quad PiP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-27 14:39+0100\n"
+"POT-Creation-Date: 2021-11-07 08:53+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -13,44 +13,44 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Poedit 1.8.7.1\n"
 
-#: qpip.py:636
+#: ../qpip.py:651
 msgid "  Menu key : Select quad channel"
 msgstr "menu - výběr Quad seznamu"
 
-#: qpip.py:635
+#: ../qpip.py:650
 msgid "  Red key : Show/Hide texts"
 msgstr "red - zobrazit/skrýt texty"
 
-#: qpip.py:534
+#: ../qpip.py:546
 msgid " (current channel)"
 msgstr " (aktuální­)"
 
-#: qpip.py:72
+#: ../qpip.py:74
 msgid " <No Channel>"
 msgstr " <žádný program>"
 
-#: qpip.py:284
+#: ../qpip.py:294
 msgid " <empty>"
 msgstr " <prázdný>"
 
-#: qpip.py:433
+#: ../qpip.py:445
 msgid "Add"
 msgstr "Přidat"
 
-#: qpip.py:443
+#: ../qpip.py:455
 msgid "Add New Quad Channel Entry"
 msgstr "Přidat nový Quad seznam"
 
-#: qpip.py:670
+#: ../qpip.py:685
 msgid "Box or driver is not support Quad PiP."
 msgstr "Přijímač nebo ovladač nepodporují­ Quad PiP."
 
-#: qpip.py:332
+#: ../qpip.py:342
 #, python-format
 msgid "Choice where to put \"%s\""
 msgstr "Vyberte, kam vložit \"%s\""
 
-#: qpip.py:269
+#: ../qpip.py:279
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -62,7 +62,7 @@ msgstr ""
 "PVR - přejmenovat Quad seznam\n"
 "Exit - ukončit úpravy"
 
-#: qpip.py:267
+#: ../qpip.py:277
 msgid ""
 "EPG key : Switch to quad PiP entry\n"
 "Ok key : Add to new entry\n"
@@ -74,94 +74,94 @@ msgstr ""
 "PVR - přejmenovat Quad seznam\n"
 "Exit - ukončit úpravy"
 
-#: qpip.py:435
+#: ../qpip.py:447
 msgid "Edit"
 msgstr "Upravit"
 
-#: qpip.py:445
+#: ../qpip.py:457
 msgid "Edit Quad Channel Entry"
 msgstr "Upravit položky Quad seznamu"
 
-#: plugin.py:17
+#: ../plugin.py:20
 msgid "Enable Quad PiP"
 msgstr "Povolit Quad PIP"
 
-#: qpip.py:451
+#: ../qpip.py:463
 msgid "Exit Quad Channel Selection"
 msgstr "Zavřít výběr Quad seznamů"
 
-#: qpip.py:617
+#: ../qpip.py:632
 msgid "Exit quad PiP"
 msgstr "Zavřít Quad PiP"
 
-#: qpip.py:258
+#: ../qpip.py:268
 msgid "Input channel name."
 msgstr "Název seznamu"
 
-#: qpip.py:627
+#: ../qpip.py:642
 msgid "Next quad PiP channel"
 msgstr "Další­ Quad PiP seznam"
 
-#: qpip.py:936
+#: ../qpip.py:951
 msgid "No channel"
 msgstr "Žádný seznam"
 
-#: qpip.py:626
+#: ../qpip.py:641
 msgid "Prev quad PiP channel"
 msgstr "Předchozí­ Quad PiP seznam"
 
-#: qpip.py:404
+#: ../qpip.py:416
 msgid "Quad PiP Channel Selection"
 msgstr "Quad PiP - výběr seznamu"
 
-#: qpip.py:612
+#: ../qpip.py:627
 msgid "Quad PiP Screen"
 msgstr ""
 
-#: qpip.py:116
+#: ../qpip.py:120
 msgid "Quad PiP channel "
 msgstr "Quad PiP seznam "
 
-#: qpip.py:667
+#: ../qpip.py:682
 msgid "Quad PiP is not available."
 msgstr ""
 
-#: plugin.py:18
+#: ../plugin.py:21
 msgid "Quad Picture in Picture"
 msgstr ""
 
-#: qpip.py:483
+#: ../qpip.py:495
 msgid "Really delete this entry?"
 msgstr "Opravdu odstranit seznam?"
 
-#: qpip.py:434
+#: ../qpip.py:446
 msgid "Remove"
 msgstr "Smazat"
 
-#: qpip.py:444
+#: ../qpip.py:456
 msgid "Remove Quad Channel Entry"
 msgstr "Smazat Quad seznam"
 
-#: qpip.py:432
+#: ../qpip.py:444
 msgid "Select"
 msgstr "Vybrat"
 
-#: qpip.py:442 qpip.py:450
+#: ../qpip.py:454 ../qpip.py:462
 msgid "Select Quad Channels"
 msgstr "Vybrat Quad seznamy"
 
-#: qpip.py:619 qpip.py:620 qpip.py:621 qpip.py:622
+#: ../qpip.py:634 ../qpip.py:635 ../qpip.py:636 ../qpip.py:637
 msgid "Select channel audio"
 msgstr "Výběr zvuku programu"
 
-#: qpip.py:623 qpip.py:624 qpip.py:625
+#: ../qpip.py:638 ../qpip.py:639 ../qpip.py:640
 msgid "Show channel selection"
 msgstr "Zobrazit výběr seznamů"
 
-#: qpip.py:628
+#: ../qpip.py:643
 msgid "Show/Hide focus bar"
 msgstr "Zobrazit/skrýt výběr"
 
-#: qpip.py:618
+#: ../qpip.py:633
 msgid "Zap focused channel on full screen"
 msgstr "Přepnout zvolený program na celou obrazovku"
