@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi Quad PiP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-11 19:27+0430\n"
+"POT-Creation-Date: 2021-11-07 08:53+0100\n"
 "PO-Revision-Date: 2021-06-11 21:51+0300\n"
 "Last-Translator: tomppaa <http://www.huoltovalikko.com/>\n"
 "Language-Team: tomppaa\n"
@@ -13,44 +13,44 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: qpip.py:636
+#: ../qpip.py:651
 msgid "  Menu key : Select quad channel"
 msgstr " Menu näppäin: Valitse Quad Kanava"
 
-#: qpip.py:635
+#: ../qpip.py:650
 msgid "  Red key : Show/Hide texts"
 msgstr "  Punainen näppäin : Näytä/Piilota teksti"
 
-#: qpip.py:534
+#: ../qpip.py:546
 msgid " (current channel)"
 msgstr " (nykyinen kanava)"
 
-#: qpip.py:72
+#: ../qpip.py:74
 msgid " <No Channel>"
 msgstr " <Ei Kanavaa>"
 
-#: qpip.py:284
+#: ../qpip.py:294
 msgid " <empty>"
 msgstr " <tyhjä>"
 
-#: qpip.py:433
+#: ../qpip.py:445
 msgid "Add"
 msgstr "Lisää"
 
-#: qpip.py:443
+#: ../qpip.py:455
 msgid "Add New Quad Channel Entry"
 msgstr "Lisää Uusi Quad Kanava"
 
-#: qpip.py:670
+#: ../qpip.py:685
 msgid "Box or driver is not support Quad PiP."
 msgstr "Vastaanotin tai ajuri ei tue Quad PiP."
 
-#: qpip.py:332
+#: ../qpip.py:342
 #, python-format
 msgid "Choice where to put \"%s\""
 msgstr "Numeromääritys kohteelle \"%s\""
 
-#: qpip.py:269
+#: ../qpip.py:279
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -62,7 +62,7 @@ msgstr ""
 "PVR näppäin: Syöttä kanavan nimi \n"
 "Exit näppäin : Lopeta kanavan muokkaus"
 
-#: qpip.py:267
+#: ../qpip.py:277
 msgid ""
 "EPG key : Switch to quad PiP entry\n"
 "Ok key : Add to new entry\n"
@@ -74,94 +74,94 @@ msgstr ""
 "PVR näppäin: Syöttä kanavan nimi \n"
 "Exit näppäin : Lopeta kanavan muokkaus"
 
-#: qpip.py:435
+#: ../qpip.py:447
 msgid "Edit"
 msgstr "Muokata"
 
-#: qpip.py:445
+#: ../qpip.py:457
 msgid "Edit Quad Channel Entry"
 msgstr "Muokkaa Quad Listan kohteita"
 
-#: plugin.py:17
+#: ../plugin.py:20
 msgid "Enable Quad PiP"
 msgstr "Ota Quad PiP käyttöön"
 
-#: qpip.py:451
+#: ../qpip.py:463
 msgid "Exit Quad Channel Selection"
 msgstr "Poistu Quad Kanava Valinnasta"
 
-#: qpip.py:617
+#: ../qpip.py:632
 msgid "Exit quad PiP"
 msgstr "Poistu quad PiP"
 
-#: qpip.py:258
+#: ../qpip.py:268
 msgid "Input channel name."
 msgstr "Syötä kanavan nimi."
 
-#: qpip.py:627
+#: ../qpip.py:642
 msgid "Next quad PiP channel"
 msgstr "Seuravaa quad PiP kanava"
 
-#: qpip.py:936
+#: ../qpip.py:951
 msgid "No channel"
 msgstr "Ei Kanavaa"
 
-#: qpip.py:626
+#: ../qpip.py:641
 msgid "Prev quad PiP channel"
 msgstr "Edellinen quad PiP kanava"
 
-#: qpip.py:404
+#: ../qpip.py:416
 msgid "Quad PiP Channel Selection"
 msgstr "Quad PiP kanava valinta"
 
-#: qpip.py:612
+#: ../qpip.py:627
 msgid "Quad PiP Screen"
 msgstr "Quad PiP Näyttö"
 
-#: qpip.py:116
+#: ../qpip.py:120
 msgid "Quad PiP channel "
 msgstr "Quad PiP Kanava "
 
-#: qpip.py:667
+#: ../qpip.py:682
 msgid "Quad PiP is not available."
 msgstr "Quad PiP ei ole saatavilla."
 
-#: plugin.py:18
+#: ../plugin.py:21
 msgid "Quad Picture in Picture"
 msgstr "Quad Kuva kuvassa"
 
-#: qpip.py:483
+#: ../qpip.py:495
 msgid "Really delete this entry?"
 msgstr "Haluatko todella poistaa tämän merkinnän?"
 
-#: qpip.py:434
+#: ../qpip.py:446
 msgid "Remove"
 msgstr "Poista"
 
-#: qpip.py:444
+#: ../qpip.py:456
 msgid "Remove Quad Channel Entry"
 msgstr "´Poista Quad Kanava merkintä"
 
-#: qpip.py:432
+#: ../qpip.py:444
 msgid "Select"
 msgstr "Valitse"
 
-#: qpip.py:442 qpip.py:450
+#: ../qpip.py:454 ../qpip.py:462
 msgid "Select Quad Channels"
 msgstr "Valitse Quad Kanavat"
 
-#: qpip.py:619 qpip.py:620 qpip.py:621 qpip.py:622
+#: ../qpip.py:634 ../qpip.py:635 ../qpip.py:636 ../qpip.py:637
 msgid "Select channel audio"
 msgstr "Ääni palvelun valitseminen"
 
-#: qpip.py:623 qpip.py:624 qpip.py:625
+#: ../qpip.py:638 ../qpip.py:639 ../qpip.py:640
 msgid "Show channel selection"
 msgstr "Avaa Quad asetukset"
 
-#: qpip.py:628
+#: ../qpip.py:643
 msgid "Show/Hide focus bar"
 msgstr "Näytä/Piilota valinta palkki"
 
-#: qpip.py:618
+#: ../qpip.py:633
 msgid "Zap focused channel on full screen"
 msgstr "Vaihda valittu kanava koko näyttöön"
