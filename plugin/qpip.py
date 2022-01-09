@@ -51,13 +51,13 @@ class QuadPipChannelEntry:
 		return self.idx
 
 	def setChannel(self, idx, chName, sref):
-		if self.channel.has_key(idx):
+		if idx in self.channel:
 			self.channel[idx] = (chName, sref)
 			return True
 		return False
 
 	def deleteChannel(self, idx):
-		if self.channel.has_key(idx):
+		if idx in self.channel:
 			self.channel[idx] = None
 			return True
 		return False
@@ -856,7 +856,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.selectAudio()
 
 	def selectAudio(self):
-		print "   --audio switch==?", self.curPlayAudio, self.currentPosition
+		print("   --audio switch==?", self.curPlayAudio, self.currentPosition)
 		if self.curPlayAudio == -1:
 			return
 		if self.curPlayAudio != self.currentPosition:
@@ -895,7 +895,7 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		return channel
 
 	def playChannel(self, channel):
-		print "[playChannel] channel : ", channel
+		print("[playChannel] channel : ", channel)
 		if self.curChannel and self.curChannel == channel.channel:
 			return
 		self.disableQuadPip()
@@ -994,7 +994,7 @@ class QuadPiP(Screen):
 		return (self.instance.size().width(), self.instance.size().height())
 
 	def playService(self, service, playAudio):
-		print "  ---PLAY-->   ", service, playAudio
+		print("  ---PLAY-->   ", service, playAudio)
 		if service and (service.flags & eServiceReference.isGroup):
 			ref = getBestPlayableServiceReference(service, eServiceReference())
 		else:
@@ -1013,7 +1013,7 @@ class QuadPiP(Screen):
 
 	def setQpipMode(self, pipMode, playAudio):
 		if self.pipservice:
-			print "   ---->   index, mode, audio ---> ", self.decoderIdx, pipMode, playAudio
+			print("   ---->   index, mode, audio ---> ", self.decoderIdx, pipMode, playAudio)
 			self.pipservice.setQpipMode(pipMode, playAudio)
 
 	def getCurrentService(self):
