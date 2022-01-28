@@ -95,14 +95,14 @@ class QuadPipChannelData:
 		self.dataLoad()
 
 	def dataSave(self):
-		fd = open(self.pipChannelDataPath, "w")
+		fd = open(self.pipChannelDataPath, "wb")
 		pickle.dump(self.PipChannelList, fd)
 		fd.close()
 
 	def dataLoad(self):
 		if not os.access(self.pipChannelDataPath, os.R_OK):
 			return
-		fd = open(self.pipChannelDataPath, "r")
+		fd = open(self.pipChannelDataPath, "rb")
 		self.PipChannelList = pickle.load(fd)
 		fd.close()
 
