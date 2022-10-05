@@ -44,6 +44,9 @@ class QuadPipChannelEntry:
 	def __cmp__(self, other):
 		return self.idx - other.idx
 
+	def __lt__(self, other):
+		return self.idx < other.idx
+
 	def getName(self):
 		return self.name
 
