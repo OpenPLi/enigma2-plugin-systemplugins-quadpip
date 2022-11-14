@@ -339,8 +339,8 @@ class CreateQuadPipChannelEntry(ChannelSelectionBase):
 			elif not (ref.flags & eServiceReference.isMarker):
 				ref = self.getCurrentSelection()
 				sref = ref.toString()
-				if not sref.startswith("1:"):
-					return
+				#if not sref.startswith("1:"):
+				#	return
 				serviceName = ServiceReference(ref).getServiceName() or "n/a"
 				_title = _('Choice where to put "%s"') % serviceName
 				_list = []
