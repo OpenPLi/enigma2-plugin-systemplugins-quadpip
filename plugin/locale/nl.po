@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:53+0100\n"
+"POT-Creation-Date: 2023-06-20 16:31+0200\n"
 "PO-Revision-Date: 2019-09-29 19:50+0200\n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: LANGUAGE &lt;LL@li.org&gt;\n"
@@ -17,44 +17,44 @@ msgstr ""
 "X-Generator: Poedit 2.2.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../qpip.py:651
+#: ../qpip.py:654
 msgid "  Menu key : Select quad channel"
 msgstr "Menu: Kies de vier zenders."
 
-#: ../qpip.py:650
+#: ../qpip.py:653
 msgid "  Red key : Show/Hide texts"
 msgstr "Rood: Toon /  Verberg tekst."
 
-#: ../qpip.py:546
+#: ../qpip.py:549
 msgid " (current channel)"
 msgstr " (huidige keuze)"
 
-#: ../qpip.py:74
+#: ../qpip.py:77
 msgid " <No Channel>"
 msgstr "<Geen zender>"
 
-#: ../qpip.py:294
+#: ../qpip.py:297
 msgid " <empty>"
 msgstr " <leeg>"
 
-#: ../qpip.py:445
+#: ../qpip.py:448
 msgid "Add"
 msgstr "Voeg toe"
 
-#: ../qpip.py:455
+#: ../qpip.py:458
 msgid "Add New Quad Channel Entry"
 msgstr "Voeg een nieuwe zender toe"
 
-#: ../qpip.py:685
+#: ../qpip.py:688
 msgid "Box or driver is not support Quad PiP."
 msgstr "De box of de driver ondersteunt geen QuadPiP."
 
-#: ../qpip.py:342
+#: ../qpip.py:345
 #, python-format
 msgid "Choice where to put \"%s\""
 msgstr "Kies waar je \"%s\" wilt plaatsen"
 
-#: ../qpip.py:279
+#: ../qpip.py:282
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -66,7 +66,7 @@ msgstr ""
 "PVR toets : Voer de zendernaam in\n"
 "Exit toets : Stop met het aanpassen van de zenders"
 
-#: ../qpip.py:277
+#: ../qpip.py:280
 msgid ""
 "EPG key : Switch to quad PiP entry\n"
 "Ok key : Add to new entry\n"
@@ -78,94 +78,94 @@ msgstr ""
 "PVR toets : Voer de zendernaam in\n"
 "Exit toets : Stop met het aanpassen van de zenders"
 
-#: ../qpip.py:447
+#: ../qpip.py:450
 msgid "Edit"
 msgstr "Wijzig"
 
-#: ../qpip.py:457
+#: ../qpip.py:460
 msgid "Edit Quad Channel Entry"
 msgstr "Wijzig de QuadPiP zender"
 
-#: ../plugin.py:20
+#: ../plugin.py:21
 msgid "Enable Quad PiP"
 msgstr "Activeer QuadPiP"
 
-#: ../qpip.py:463
+#: ../qpip.py:466
 msgid "Exit Quad Channel Selection"
 msgstr "Beëindig de QuadPIP keuze"
 
-#: ../qpip.py:632
+#: ../qpip.py:635
 msgid "Exit quad PiP"
 msgstr "Beëindig QuadPiP"
 
-#: ../qpip.py:268
+#: ../qpip.py:271
 msgid "Input channel name."
 msgstr "Voer de zendernaam in."
 
-#: ../qpip.py:642
+#: ../qpip.py:645
 msgid "Next quad PiP channel"
 msgstr "De volgende QuadPiP zender"
 
-#: ../qpip.py:951
+#: ../qpip.py:954
 msgid "No channel"
 msgstr "Geen zender"
 
-#: ../qpip.py:641
+#: ../qpip.py:644
 msgid "Prev quad PiP channel"
 msgstr "Vorige QuadPiP zender"
 
-#: ../qpip.py:416
+#: ../qpip.py:419
 msgid "Quad PiP Channel Selection"
 msgstr "QuadPiP zenderkeuze"
 
-#: ../qpip.py:627
+#: ../qpip.py:630
 msgid "Quad PiP Screen"
 msgstr "QuadPiP scherm"
 
-#: ../qpip.py:120
+#: ../qpip.py:123
 msgid "Quad PiP channel "
 msgstr "QuadPiP keuze "
 
-#: ../qpip.py:682
+#: ../qpip.py:685
 msgid "Quad PiP is not available."
 msgstr "QuadPiP is niet beschikbaar."
 
-#: ../plugin.py:21
+#: ../plugin.py:22
 msgid "Quad Picture in Picture"
 msgstr "Quad Picture in Picture"
 
-#: ../qpip.py:495
+#: ../qpip.py:498
 msgid "Really delete this entry?"
 msgstr "Wilt u de huidige invoer verwijderen?"
 
-#: ../qpip.py:446
+#: ../qpip.py:449
 msgid "Remove"
 msgstr "Verwijder"
 
-#: ../qpip.py:456
+#: ../qpip.py:459
 msgid "Remove Quad Channel Entry"
 msgstr "Verwijder deze QuadPiP zender"
 
-#: ../qpip.py:444
+#: ../qpip.py:447
 msgid "Select"
 msgstr "Kies"
 
-#: ../qpip.py:454 ../qpip.py:462
+#: ../qpip.py:457 ../qpip.py:465
 msgid "Select Quad Channels"
 msgstr "Kies Quad zenders"
 
-#: ../qpip.py:634 ../qpip.py:635 ../qpip.py:636 ../qpip.py:637
+#: ../qpip.py:637 ../qpip.py:638 ../qpip.py:639 ../qpip.py:640
 msgid "Select channel audio"
 msgstr "Kies het geluidskanaal"
 
-#: ../qpip.py:638 ../qpip.py:639 ../qpip.py:640
+#: ../qpip.py:641 ../qpip.py:642 ../qpip.py:643
 msgid "Show channel selection"
 msgstr "Toon de zenderkeuze"
 
-#: ../qpip.py:643
+#: ../qpip.py:646
 msgid "Show/Hide focus bar"
 msgstr "Toon / Verberg focus balk"
 
-#: ../qpip.py:633
+#: ../qpip.py:636
 msgid "Zap focused channel on full screen"
 msgstr "Toon het huidige kanaal volledig"

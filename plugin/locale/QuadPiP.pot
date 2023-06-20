@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-07 08:53+0100\n"
+"POT-Creation-Date: 2023-06-20 16:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,44 +17,44 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qpip.py:651
+#: ../qpip.py:654
 msgid "  Menu key : Select quad channel"
 msgstr ""
 
-#: ../qpip.py:650
+#: ../qpip.py:653
 msgid "  Red key : Show/Hide texts"
 msgstr ""
 
-#: ../qpip.py:546
+#: ../qpip.py:549
 msgid " (current channel)"
 msgstr ""
 
-#: ../qpip.py:74
+#: ../qpip.py:77
 msgid " <No Channel>"
 msgstr ""
 
-#: ../qpip.py:294
+#: ../qpip.py:297
 msgid " <empty>"
 msgstr ""
 
-#: ../qpip.py:445
+#: ../qpip.py:448
 msgid "Add"
 msgstr ""
 
-#: ../qpip.py:455
+#: ../qpip.py:458
 msgid "Add New Quad Channel Entry"
 msgstr ""
 
-#: ../qpip.py:685
+#: ../qpip.py:688
 msgid "Box or driver is not support Quad PiP."
 msgstr ""
 
-#: ../qpip.py:342
+#: ../qpip.py:345
 #, python-format
 msgid "Choice where to put \"%s\""
 msgstr ""
 
-#: ../qpip.py:279
+#: ../qpip.py:282
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -62,7 +62,7 @@ msgid ""
 "Exit key : Finish channel edit"
 msgstr ""
 
-#: ../qpip.py:277
+#: ../qpip.py:280
 msgid ""
 "EPG key : Switch to quad PiP entry\n"
 "Ok key : Add to new entry\n"
@@ -70,94 +70,94 @@ msgid ""
 "Exit key : Finish channel edit"
 msgstr ""
 
-#: ../qpip.py:447
+#: ../qpip.py:450
 msgid "Edit"
 msgstr ""
 
-#: ../qpip.py:457
+#: ../qpip.py:460
 msgid "Edit Quad Channel Entry"
 msgstr ""
 
-#: ../plugin.py:20
+#: ../plugin.py:21
 msgid "Enable Quad PiP"
 msgstr ""
 
-#: ../qpip.py:463
+#: ../qpip.py:466
 msgid "Exit Quad Channel Selection"
 msgstr ""
 
-#: ../qpip.py:632
+#: ../qpip.py:635
 msgid "Exit quad PiP"
 msgstr ""
 
-#: ../qpip.py:268
+#: ../qpip.py:271
 msgid "Input channel name."
 msgstr ""
 
-#: ../qpip.py:642
+#: ../qpip.py:645
 msgid "Next quad PiP channel"
 msgstr ""
 
-#: ../qpip.py:951
+#: ../qpip.py:954
 msgid "No channel"
 msgstr ""
 
-#: ../qpip.py:641
+#: ../qpip.py:644
 msgid "Prev quad PiP channel"
 msgstr ""
 
-#: ../qpip.py:416
+#: ../qpip.py:419
 msgid "Quad PiP Channel Selection"
 msgstr ""
 
-#: ../qpip.py:627
+#: ../qpip.py:630
 msgid "Quad PiP Screen"
 msgstr ""
 
-#: ../qpip.py:120
+#: ../qpip.py:123
 msgid "Quad PiP channel "
 msgstr ""
 
-#: ../qpip.py:682
+#: ../qpip.py:685
 msgid "Quad PiP is not available."
 msgstr ""
 
-#: ../plugin.py:21
+#: ../plugin.py:22
 msgid "Quad Picture in Picture"
 msgstr ""
 
-#: ../qpip.py:495
+#: ../qpip.py:498
 msgid "Really delete this entry?"
 msgstr ""
 
-#: ../qpip.py:446
+#: ../qpip.py:449
 msgid "Remove"
 msgstr ""
 
-#: ../qpip.py:456
+#: ../qpip.py:459
 msgid "Remove Quad Channel Entry"
 msgstr ""
 
-#: ../qpip.py:444
+#: ../qpip.py:447
 msgid "Select"
 msgstr ""
 
-#: ../qpip.py:454 ../qpip.py:462
+#: ../qpip.py:457 ../qpip.py:465
 msgid "Select Quad Channels"
 msgstr ""
 
-#: ../qpip.py:634 ../qpip.py:635 ../qpip.py:636 ../qpip.py:637
+#: ../qpip.py:637 ../qpip.py:638 ../qpip.py:639 ../qpip.py:640
 msgid "Select channel audio"
 msgstr ""
 
-#: ../qpip.py:638 ../qpip.py:639 ../qpip.py:640
+#: ../qpip.py:641 ../qpip.py:642 ../qpip.py:643
 msgid "Show channel selection"
 msgstr ""
 
-#: ../qpip.py:643
+#: ../qpip.py:646
 msgid "Show/Hide focus bar"
 msgstr ""
 
-#: ../qpip.py:633
+#: ../qpip.py:636
 msgid "Zap focused channel on full screen"
 msgstr ""
