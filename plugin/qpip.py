@@ -23,14 +23,6 @@ import os
 config.plugins.quadpip = ConfigSubsection()
 config.plugins.quadpip.lastchannel = ConfigNumber(default=1)
 
-ENABLE_QPIP_PROCPATH = "/proc/stb/video/decodermode"
-
-
-def setDecoderMode(value):
-	if os.access(ENABLE_QPIP_PROCPATH, os.F_OK):
-		open(ENABLE_QPIP_PROCPATH, "w").write(value)
-		return open(ENABLE_QPIP_PROCPATH, "r").read().strip() == value
-
 
 class QuadPipChannelEntry:
 	def __init__(self, name, idx, ch1, ch2, ch3, ch4):
@@ -691,47 +683,47 @@ class QuadPipScreen(Screen, FocusShowHide, HelpableScreen):
 		self.session.openWithCallback(self.ChannelSelectCB, QuadPiPChannelSelection)
 
 	def layoutFinishedCB(self):
-		if not os.access(ENABLE_QPIP_PROCPATH, os.F_OK):
-			self.notSupportTimer.start(100, True)
-			return
+		if BoxInfo.getItem("HasQuadpip"):
+			if os.path.exists("/proc/stb/vmpeg/0/dst_apply"):
+				open("/proc/stb/vmpeg/0/dst_left", "w").write("00000000")
+				open("/proc/stb/vmpeg/0/dst_top", "w").write("00000000")
+				open("/proc/stb/vmpeg/0/dst_width", "w").write("00000000")
+				open("/proc/stb/vmpeg/0/dst_height", "w").write("00000000")
+				open("/proc/stb/vmpeg/0/dst_apply", "w").write("00000001")
 
-		if os.path.exists("/proc/stb/vmpeg/0/dst_apply"):
-			open("/proc/stb/vmpeg/0/dst_left", "w").write("00000000")
-			open("/proc/stb/vmpeg/0/dst_top", "w").write("00000000")
-			open("/proc/stb/vmpeg/0/dst_width", "w").write("00000000")
-			open("/proc/stb/vmpeg/0/dst_height", "w").write("00000000")
-			open("/proc/stb/vmpeg/0/dst_apply", "w").write("00000001")
+			self.onClose.append(self.__onClose)
 
-		self.onClose.append(self.__onClose)
+			if self.session.pipshown:
+				if self.InfoBarInstance:
+					hasattr(self.InfoBarInstance, "showPiP") and self.InfoBarInstance.showPiP()
+				if hasattr(self.session, 'pip'):
+					del self.session.pip
+				self.session.pipshown = False
 
-		if self.session.pipshown:
-			if self.InfoBarInstance:
-				hasattr(self.InfoBarInstance, "showPiP") and self.InfoBarInstance.showPiP()
-			if hasattr(self.session, 'pip'):
-				del self.session.pip
-			self.session.pipshown = False
+			self.oldService = self.session.nav.getCurrentlyPlayingServiceOrGroup()
+			self.newService = None
+			self.session.nav.stopService()
 
-		self.oldService = self.session.nav.getCurrentlyPlayingServiceOrGroup()
-		self.newService = None
-		self.session.nav.stopService()
+			self.disableLcdLiveTV()
 
-		self.disableLcdLiveTV()
+			if BoxInfo.getItem("HasQuadpip"):
+				config.usage.QuadpipMode.value = True
+			else:
+				self.forceToExitTimer.start(0, True)
+				return
 
-		ret = setDecoderMode("mosaic")
-		if ret is not True:
-			self.forceToExitTimer.start(0, True)
-			return
+			self.moveLabel()
 
-		self.moveLabel()
-
-		if self.qpipChannelList.length() == 0:
-			self.noChannelTimer.start(10, True)
+			if self.qpipChannelList.length() == 0:
+				self.noChannelTimer.start(10, True)
+			else:
+				self.playLastChannel()
 		else:
-			self.playLastChannel()
+			self.notSupportTimer.start(100, True)
 
 	def __onClose(self):
 		self.disableQuadPip()
-		setDecoderMode("normal")
+		config.usage.QuadpipMode.value = False
 
 		self.restoreLcdLiveTV()
 
