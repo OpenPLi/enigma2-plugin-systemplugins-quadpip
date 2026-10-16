@@ -1,0 +1,169 @@
+# Turkish translations for enigma2-plugin-systemplugins-quadpip.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: QuadPiP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-20 16:31+0200\n"
+"PO-Revision-Date: 2026-10-16 19:13+0300\n"
+"Last-Translator: audi06_19 <info@dreamosat-forum.com>\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.10\n"
+
+#: ../qpip.py:654
+msgid "  Menu key : Select quad channel"
+msgstr "  MENU tuşu: Dörtlü kanal grubu seç"
+
+#: ../qpip.py:653
+msgid "  Red key : Show/Hide texts"
+msgstr "  Kırmızı tuş: Metinleri göster/gizle"
+
+#: ../qpip.py:549
+msgid " (current channel)"
+msgstr " (mevcut kanal)"
+
+#: ../qpip.py:77
+msgid " <No Channel>"
+msgstr " <Kanal yok>"
+
+#: ../qpip.py:297
+msgid " <empty>"
+msgstr " <boş>"
+
+#: ../qpip.py:448
+msgid "Add"
+msgstr "Ekle"
+
+#: ../qpip.py:458
+msgid "Add New Quad Channel Entry"
+msgstr "Yeni dörtlü kanal grubu ekle"
+
+#: ../qpip.py:688
+msgid "Box or driver is not support Quad PiP."
+msgstr "Alıcı veya sürücü Quad PiP'i desteklemiyor."
+
+#: ../qpip.py:345
+#, python-format
+msgid "Choice where to put \"%s\""
+msgstr "\"%s\" için konum seçin"
+
+#: ../qpip.py:282
+msgid ""
+"EPG key : Switch to channel list\n"
+"Ok key : Remove selected channel\n"
+"PVR key : Input channel name\n"
+"Exit key : Finish channel edit"
+msgstr ""
+"EPG tuşu: Kanal listesine geç\n"
+"OK tuşu: Seçili kanalı kaldır\n"
+"PVR tuşu: Kanal adını gir\n"
+"EXIT tuşu: Kanal düzenlemeyi bitir"
+
+#: ../qpip.py:280
+msgid ""
+"EPG key : Switch to quad PiP entry\n"
+"Ok key : Add to new entry\n"
+"PVR key : Input channel name\n"
+"Exit key : Finish channel edit"
+msgstr ""
+"EPG tuşu: Quad PiP girdisine geç\n"
+"OK tuşu: Yeni gruba ekle\n"
+"PVR tuşu: Kanal adını gir\n"
+"EXIT tuşu: Kanal düzenlemeyi bitir"
+
+#: ../qpip.py:450
+msgid "Edit"
+msgstr "Düzenle"
+
+#: ../qpip.py:460
+msgid "Edit Quad Channel Entry"
+msgstr "Dörtlü kanal grubunu düzenle"
+
+#: ../plugin.py:21
+msgid "Enable Quad PiP"
+msgstr "Quad PiP'i etkinleştir"
+
+#: ../qpip.py:466
+msgid "Exit Quad Channel Selection"
+msgstr "Dörtlü kanal seçiminden çık"
+
+#: ../qpip.py:635
+msgid "Exit quad PiP"
+msgstr "Quad PiP'ten çık"
+
+#: ../qpip.py:271
+msgid "Input channel name."
+msgstr "Kanal adını girin."
+
+#: ../qpip.py:645
+msgid "Next quad PiP channel"
+msgstr "Sonraki Quad PiP kanalı"
+
+#: ../qpip.py:954
+msgid "No channel"
+msgstr "Kanal yok"
+
+#: ../qpip.py:644
+msgid "Prev quad PiP channel"
+msgstr "Önceki Quad PiP kanalı"
+
+#: ../qpip.py:419
+msgid "Quad PiP Channel Selection"
+msgstr "Quad PiP kanal seçimi"
+
+#: ../qpip.py:630
+msgid "Quad PiP Screen"
+msgstr "Quad PiP ekranı"
+
+#: ../qpip.py:123
+msgid "Quad PiP channel "
+msgstr "Quad PiP kanalı "
+
+#: ../qpip.py:685
+msgid "Quad PiP is not available."
+msgstr "Quad PiP kullanılamıyor."
+
+#: ../plugin.py:22
+msgid "Quad Picture in Picture"
+msgstr "Dörtlü resim içinde resim"
+
+#: ../qpip.py:498
+msgid "Really delete this entry?"
+msgstr "Bu girdi silinsin mi?"
+
+#: ../qpip.py:449
+msgid "Remove"
+msgstr "Kaldır"
+
+#: ../qpip.py:459
+msgid "Remove Quad Channel Entry"
+msgstr "Dörtlü kanal grubunu kaldır"
+
+#: ../qpip.py:447
+msgid "Select"
+msgstr "Seç"
+
+#: ../qpip.py:457 ../qpip.py:465
+msgid "Select Quad Channels"
+msgstr "Dörtlü kanalları seç"
+
+#: ../qpip.py:637 ../qpip.py:638 ../qpip.py:639 ../qpip.py:640
+msgid "Select channel audio"
+msgstr "Sesi dinlenecek kanalı seç"
+
+#: ../qpip.py:641 ../qpip.py:642 ../qpip.py:643
+msgid "Show channel selection"
+msgstr "Kanal seçimini göster"
+
+#: ../qpip.py:646
+msgid "Show/Hide focus bar"
+msgstr "Odak çubuğunu göster/gizle"
+
+#: ../qpip.py:636
+msgid "Zap focused channel on full screen"
+msgstr "Odaktaki kanalı tam ekranda aç"
